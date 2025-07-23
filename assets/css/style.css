@@ -269,36 +269,38 @@ a:hover {
 }
 
 /* ===== Publications Page Specific ===== */
-.publication-list {
-    margin-top: 2rem;
-}
-
+/* Publications List */
 .publication {
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border);
-}
-
-.publication:last-child {
-    border-bottom: none;
-}
-
+  }
+  
 .publication h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+font-size: 1.1rem;
+margin-bottom: 0.3rem;
+color: var(--primary);
 }
 
 .publication .authors {
-    font-style: italic;
-    color: var(--text-light);
-    margin-bottom: 0.3rem;
+font-style: italic;
+margin-bottom: 0.3rem;
 }
 
 .publication .journal {
-    font-weight: 500;
+font-weight: 500;
+color: var(--secondary);
+}
+
+.publication .year {
+color: var(--text-light);
+font-size: 0.9rem;
 }
 
 .publication .links a {
-    margin-right: 1rem;
-    font-size: 0.9rem;
+margin-right: 1rem;
+font-size: 0.9rem;
+padding: 0.2rem 0.5rem;
+background: var(--light);
+border-radius: 3px;
 }
