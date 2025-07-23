@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | Dr Nefel Tellioglu</title>
+    <title>Paintings | Dr Nefel Tellioglu</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/favicon.ico">
     <script src="
@@ -25,9 +25,9 @@ https://cdn.jsdelivr.net/npm/bibtex-parser-js@0.0.2/bibtexParse.min.js
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html" >About</a></li>
-                        <li><a href="papers.html" class="active">Publications</a></li>
+                        <li><a href="papers.html" >Publications</a></li>
                         <li><a href="teaching.html">Teaching</a></li>
-                        <li><a href="paintings.html">Paintings</a></li>
+                        <li><a href="paintings.html" class="active">Paintings</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -36,150 +36,189 @@ https://cdn.jsdelivr.net/npm/bibtex-parser-js@0.0.2/bibtexParse.min.js
     </header>
     
     <main class="main-content">
-        
-        <!-- Load working parser -->
-        <!--
-        <h1>Publications</h1>
-        <div id="publications-container">Loading...</div>
-
-
-        <script src="
-https://cdn.jsdelivr.net/npm/bibtex-parser-js@0.0.2/bibtexParse.min.js
-"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            fetch('assets/data/publications.bib')
-                .then(response => response.text())
-                .then(bibtexText => {
-                const entries = bibtexParse.toJSON(bibtexText);
-                let html = '';
-
-                entries.forEach(entry => {
-                    const t = entry.entryTags;
-                    html += `
-                    <div class="publication">
-                        <h3>${t.title || 'Untitled'}</h3>
-                        <p><strong>Authors:</strong> ${(t.author || '').replace(/ and /g, ', ')}</p>
-                        <p><strong>Journal:</strong> ${t.journal || ''}</p>
-                        <p><strong>Year:</strong> ${t.year || ''}</p>
-                        ${t.doi ? `<p><a href="https://doi.org/${t.doi}" target="_blank">DOI</a></p>` : ''}
-                    </div>
-                    <hr>
-                    `;
-                });
-
-                document.getElementById('publications-container').innerHTML = html;
-                })
-                .catch(error => {
-                console.error('BibTeX loading error:', error);
-                document.getElementById('publications-container').innerHTML =
-                    '<p style="color:red;">Error loading publications.</p>';
-                });
-            });
-        </script>
-        --> 
-
-        
-        
         <div class="container">
-            <h2>Publications</h2>
+            <div class="intro-text">
+                 <p>Before I started to write, I painted, just like everybody else. 
+                    But somehow, I kept drawing. Painting, which later transformed into
+                    many different kinds of art mediums in my life, always stayed there as a cornerstone.
+
+                    My work revolves around the human face. It amazes me —  
+                    how expression and stillness coexist via light and shadows, 
+                    even in the most minimalist drawings; 
+                    how so much can be expressed in such a small canvas of skin.
+                    
+                    You can precisely find shadow, light, 
+                    expresion, movement, and shape in this very small part of the body. 
+                    Every face has a different story to tell. That’s what draws me in.
+                    Here, like a small portfolio, you can find some works of mine. 
+                    Click any piece to explore more deeply—zoom in, follow the lines, 
+                    and navigate through the collection. </p>
+            </div>
             
-            <section class="publication-list">
-                <div id="publications-container"></div>
-                
-                
-                <h3>Journal Articles</h3>
-                <ul>
-                    <li>
-                        Xie, O., Chisholm, R.H., Featherstone, L., Nguyen, A., Hayes, A.J., Jespersen, M., Zachreson, C., <strong>Tellioglu, N.</strong>, et al., 2025. 
-                        Temporal and Geographic Strain Dynamics of Invasive Streptococcus Pyogenes in Australia: A Multi-Centre Clinical and Genomic Epidemiology Study 2011–2023. 
-                        <em>The Lancet Microbe</em>. 
-                        <a href="https://doi.org/10.1016/j.lanmic.2024.101053" target="_blank">https://doi.org/10.1016/j.lanmic.2024.101053</a>
-                    </li>
-                    <li>
-                        <strong>Tellioglu, N.</strong>, Chisholm, R.H., et al., 2023. 
-                        Modelling mass drug administration strategies for reducing scabies burden in Monrovia, Liberia. 
-                        <em>Epidemiology and Infection</em>. 
-                        <a href="https://doi.org/10.1017/S0950268823001310" target="_blank">https://doi.org/10.1017/S0950268823001310</a>
-                    </li>
-                    <li>
-                        Geard, N., Bradhurst, R., <strong>Tellioglu, N.</strong>, et al., 2022. 
-                        Model-based estimation of the impact on rotavirus disease of RV3-BB vaccine administered in a neonatal or infant schedule. 
-                        <em>Human Vaccines & Immunotherapeutics</em>. 
-                        <a href="https://doi.org/10.1080/21645515.2022.2139097" target="_blank">https://doi.org/10.1080/21645515.2022.2139097</a>
-                    </li>
-                    <li>
-                        <strong>Tellioglu, N.</strong>, Geard, N., Chisholm, R.H., 2022. 
-                        Modelling the effect of within-host dynamics on the diversity of a multi-strain pathogen. 
-                        <em>Journal of Theoretical Biology</em>. 
-                        <a href="https://doi.org/10.1016/j.jtbi.2022.111185" target="_blank">https://doi.org/10.1016/j.jtbi.2022.111185</a>
-                    </li>
-                    <li>
-                        <strong>Tellioglu, N.</strong>, Chisholm, R.H., et al., 2022. 
-                        The efficacy of sampling strategies for estimating scabies prevalence. 
-                        <em>PLoS Neglected Tropical Diseases</em>. 
-                        <a href="https://doi.org/10.1371/journal.pntd.0010456" target="_blank">https://doi.org/10.1371/journal.pntd.0010456</a>
-                    </li>
-                    <li>
-                        Shearer, F., Walker, J., <strong>Tellioglu, N.</strong>, et al., 2022. 
-                        Rapid assessment of the risk of SARS-CoV-2 importation: case study and lessons learned. 
-                        <em>Epidemics</em>. 
-                        <a href="https://doi.org/10.1016/j.epidem.2022.100549" target="_blank">https://doi.org/10.1016/j.epidem.2022.100549</a>
-                    </li>
-                </ul>
+            <div class="thumbnail-gallery">
+                <div class="thumbnail" data-index="0" data-title="Beginning">
+                    <img src="assets/images/painting1.jpg" alt="Beginning,  Acrylic on Paper, 10×15 cm">
+                </div>
+                <div class="thumbnail" data-index="1" data-title="Untitled">
+                    <img src="assets/images/painting2.jpg" alt="Untitled, Acrylic on Notebook Cover, 10×15 cm">
+                </div>
+                <div class="thumbnail" data-index="2" data-title="Untitled">
+                    <img src="assets/images/painting3.jpg" alt="Untitled, Acrylic on Notebook Cover, 10×15 cm">
+                </div>
+                <div class="thumbnail" data-index="3" data-title="Untitled">
+                    <img src="assets/images/painting4.jpg" alt="Untitled, Acrylic on Paper, 15×30 cm">
+                </div>
+                <div class="thumbnail" data-index="4" data-title="Miss-Lady-Mrs-Woman">
+                    <img src="assets/images/painting5.jpg" alt="Miss-Lady-Mrs-Woman, Stencil on Paper. 52×70 cm">
+                </div>
+                <div class="thumbnail" data-index="5" data-title="Untitled">
+                    <img src="assets/images/painting6.jpg" alt="Untitled, Acrylic on Paper, 15×21 cm">
+                </div>
+                <div class="thumbnail" data-index="6" data-title="Untitled">
+                    <img src="assets/images/painting7.jpg" alt="Untitled, Acrylic on Paper, 10×15 cm">
+                </div>
+            </div>
             
-                
-            </section>
+            <!-- Gallery Overlay -->
+            <div class="gallery-overlay">
+                <span class="close-gallery">&times;</span>
+                <div class="gallery-container">
+                    <div class="painting-info">
+                        <h2 class="painting-title">Abstract Harmony</h2>
+                    </div>
+                    <div class="painting-viewer">
+                        <div class="current-painting-container">
+                            <img class="current-painting" src="" alt="">
+                        </div>
+                        <div class="gallery-nav">
+                            <div class="nav-arrow prev-painting">&larr;</div>
+                            <div class="nav-arrow next-painting">&rarr;</div>
+                        </div>
+                        <div class="zoom-controls">
+                            <button class="zoom-btn zoom-in">+</button>
+                            <button class="zoom-btn zoom-out">-</button>
+                            <button class="zoom-btn zoom-reset">⟲</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <section class="publication-list">
-                <h3>Preprints</h3>
-                <ul>
-                    <li>
-                        Zarebski, A.E., <strong>Tellioglu, N.</strong>, et al., 2025. 
-                        Including frameworks of public health ethics in computational modelling of infectious disease interventions. 
-                        <em>arXiv</em>. 
-                        <a href="https://doi.org/10.48550/arXiv.2502.00071" target="_blank">https://doi.org/10.48550/arXiv.2502.00071</a>
-                    </li>
-                    <li>
-                        <strong>Tellioglu, N.</strong>, Price, D.J., Chen, X., Spirkoska, V., Wang, Y., Moss, R., Carvalho, N., Carville, K., Campbell, P.T., McVernon, J., 2025. 
-                        A flexible agent-based modelling framework of multi-serotype pneumococcal carriage to evaluate vaccine strategies in large populations. 
-                        <em>medRxiv</em>. 
-                        <a href="https://doi.org/10.1101/2025.05.22.25327965" target="_blank">https://doi.org/10.1101/2025.05.22.25327965</a>
-                    </li>
-                </ul>
-            </section>
-            <div id="publications-container"></div>
-            <section class="publication-list">
-                <h3>Conference Proceedings</h3>
-                <ul>
-                    <li>
-                        <strong>Tellioglu, N.</strong>, Barlas, Y., 2020. 
-                        Automated Discovery of Polarity from Data in System Dynamics Context. 
-                        In Proceedings of the 38th International Conference of the System Dynamics Society, Bergen, Norway.
-                    </li>
-                    <li>
-                        <strong>Tellioglu, N.</strong>, Barlas, Y., 2020. 
-                        Automated Discovery of Causality and Polarity from Data. 
-                        In Proceedings of the 3rd Asia Pacific System Dynamics Conference, Brisbane, Australia.
-                    </li>
-                    <li>
-                        Akoguz, E.C., <strong>Tellioglu, N.</strong>, Barlas, Y., 2018. 
-                        The Dynamics of Food Waste in Relation to Consumption, Production, and Shopping Patterns. 
-                        In Proceedings of the 36th International Conference of the System Dynamics Society, Reykjavík, Iceland.
-                    </li>
-                    <li>
-                        Dursun, I., <strong>Tellioglu, N.</strong>, Elhuseyni, M., Celik, N., 2018. 
-                        Estimating Gene Expression in Breast Cancer: A Hybrid Learning Framework. 
-                        In Proceedings of the Annual Industrial and Systems Engineering Research Conference, Florida, USA.
-                    </li>
-                    <li>
-                        Aktas, G., <strong>Tellioglu, N.</strong>, Barlas, Y., Yasarcan, H., 2016. 
-                        Modeling the Long-Term Dynamics of Obesity as a Societal Epidemic. 
-                        In Proceedings of the 34th International Conference of the System Dynamics Society, Delft, the Netherlands.
-                    </li>
-                </ul>
-            </section>  
+            <script>
+                // Gallery functionality
+                document.addEventListener('DOMContentLoaded', function() {
+                    const paintings = [
+                        { src: 'assets/images/painting1.jpg', title: 'Beginning, 2014, Acrylic on Paper, 10×15 cm' },
+                        { src: 'assets/images/painting2.jpg', title: 'Untitled, Acrylic on Notebook Cover, 10×15 cm' },
+                        { src: 'assets/images/painting3.jpg', title: 'Untitled, Acrylic on Notebook Cover, 10×15 cm' },
+                        { src: 'assets/images/painting4.jpg', title: 'Untitled, Acrylic on Paper, 15×30 cm' },
+                        { src: 'assets/images/painting5.jpg', title: 'Miss-Lady-Mrs-Woman, Stencil on Paper. 52×70 cm' },
+                        { src: 'assets/images/painting6.jpg', title: 'Untitled, Acrylic on Paper, 15×21 cm' },
+                        { src: 'assets/images/painting7.jpg', title: 'Untitled, Acrylic on Paper, 10×15 cm' }
+                    ];
+                    
+                    const overlay = document.querySelector('.gallery-overlay');
+                    const currentImg = document.querySelector('.current-painting');
+                    const paintingTitle = document.querySelector('.painting-title');
+                    let currentIndex = 0;
+                    let scale = 1;
+                    
+                    // Open gallery when thumbnail is clicked
+                    document.querySelectorAll('.thumbnail').forEach(thumb => {
+                        thumb.addEventListener('click', function() {
+                            currentIndex = parseInt(this.getAttribute('data-index'));
+                            updateGallery();
+                            overlay.style.display = 'block';
+                            document.body.style.overflow = 'hidden';
+                        });
+                    });
+                    
+                    // Close gallery
+                    document.querySelector('.close-gallery').addEventListener('click', function() {
+                        overlay.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        resetZoom();
+                    });
+                    
+                    // Navigation
+                    document.querySelector('.prev-painting').addEventListener('click', function() {
+                        currentIndex = (currentIndex - 1 + paintings.length) % paintings.length;
+                        resetZoom();
+                        updateGallery();
+                    });
+                    
+                    document.querySelector('.next-painting').addEventListener('click', function() {
+                        currentIndex = (currentIndex + 1) % paintings.length;
+                        resetZoom();
+                        updateGallery();
+                    });
+                    
+                    // Keyboard navigation
+                    document.addEventListener('keydown', function(e) {
+                        if (overlay.style.display !== 'block') return;
+                        
+                        if (e.key === 'Escape') {
+                            overlay.style.display = 'none';
+                            document.body.style.overflow = 'auto';
+                            resetZoom();
+                        } else if (e.key === 'ArrowLeft') {
+                            currentIndex = (currentIndex - 1 + paintings.length) % paintings.length;
+                            resetZoom();
+                            updateGallery();
+                        } else if (e.key === 'ArrowRight') {
+                            currentIndex = (currentIndex + 1) % paintings.length;
+                            resetZoom();
+                            updateGallery();
+                        }
+                    });
+                    
+                    // Zoom functionality
+                    document.querySelector('.zoom-in').addEventListener('click', function() {
+                        scale += 0.2;
+                        currentImg.style.transform = `scale(${scale})`;
+                    });
+                    
+                    document.querySelector('.zoom-out').addEventListener('click', function() {
+                        if (scale > 0.3) {
+                            scale -= 0.2;
+                            currentImg.style.transform = `scale(${scale})`;
+                        }
+                    });
+                    
+                    document.querySelector('.zoom-reset').addEventListener('click', resetZoom);
+                    
+                    // Double click to zoom
+                    currentImg.addEventListener('dblclick', function(e) {
+                        if (scale === 1) {
+                            scale = 2;
+                        } else {
+                            scale = 1;
+                        }
+                        currentImg.style.transform = `scale(${scale})`;
+                    });
+                    
+                    function updateGallery() {
+                        currentImg.src = paintings[currentIndex].src;
+                        currentImg.alt = paintings[currentIndex].title;
+                        paintingTitle.textContent = paintings[currentIndex].title;
+                        // Reset to natural dimensions after new image loads
+                        currentImg.onload = function() {
+                            resetZoom();
+                        };
+                    }
+                    
+                    function resetZoom() {
+                        scale = 1;
+                        currentImg.style.transform = 'scale(1)';
+                    }
+                });
+            </script>
+
+
         </div>
+        
+        
+        
+        
     </main>
 
     <footer class="footer">
