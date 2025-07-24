@@ -37,48 +37,6 @@ https://cdn.jsdelivr.net/npm/bibtex-parser-js@0.0.2/bibtexParse.min.js
     
     <main class="main-content">
         
-        <!-- Load working parser -->
-        <!--
-        <h1>Publications</h1>
-        <div id="publications-container">Loading...</div>
-
-
-        <script src="
-https://cdn.jsdelivr.net/npm/bibtex-parser-js@0.0.2/bibtexParse.min.js
-"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            fetch('assets/data/publications.bib')
-                .then(response => response.text())
-                .then(bibtexText => {
-                const entries = bibtexParse.toJSON(bibtexText);
-                let html = '';
-
-                entries.forEach(entry => {
-                    const t = entry.entryTags;
-                    html += `
-                    <div class="publication">
-                        <h3>${t.title || 'Untitled'}</h3>
-                        <p><strong>Authors:</strong> ${(t.author || '').replace(/ and /g, ', ')}</p>
-                        <p><strong>Journal:</strong> ${t.journal || ''}</p>
-                        <p><strong>Year:</strong> ${t.year || ''}</p>
-                        ${t.doi ? `<p><a href="https://doi.org/${t.doi}" target="_blank">DOI</a></p>` : ''}
-                    </div>
-                    <hr>
-                    `;
-                });
-
-                document.getElementById('publications-container').innerHTML = html;
-                })
-                .catch(error => {
-                console.error('BibTeX loading error:', error);
-                document.getElementById('publications-container').innerHTML =
-                    '<p style="color:red;">Error loading publications.</p>';
-                });
-            });
-        </script>
-        --> 
-
         
         
         <div class="container">
@@ -184,7 +142,7 @@ https://cdn.jsdelivr.net/npm/bibtex-parser-js@0.0.2/bibtexParse.min.js
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 Nefel Tellioglu. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Nefel Tellioglu. All rights reserved.</p>
         </div>
     </footer>
 </body>
