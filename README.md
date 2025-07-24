@@ -1,2 +1,2 @@
-This repository contains the source files for [my academic website]((https://nefeltellioglu.github.io/).
+This repository contains the source files for [my academic website](https://nefeltellioglu.github.io/).
 
