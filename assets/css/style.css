@@ -404,14 +404,13 @@ border-radius: 3px;
 /* ===== Painting Page Specific ===== */
 /* Base styles */
 
+
 .intro-text {
-    max-width: 800px;
-    margin: 0 auto 40px;
     padding: 20px;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px; /* only bottom margin */
 }
-
 .thumbnail-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
