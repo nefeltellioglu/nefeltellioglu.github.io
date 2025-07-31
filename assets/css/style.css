@@ -31,6 +31,12 @@ a {
     transition: color 0.3s;
 }
 
+.intro-text {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px; /* only bottom margin */
+}
 a:hover {
     color: var(--primary);
 }
@@ -405,12 +411,7 @@ border-radius: 3px;
 /* Base styles */
 
 
-.intro-text {
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-bottom: 40px; /* only bottom margin */
-}
+
 .thumbnail-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
